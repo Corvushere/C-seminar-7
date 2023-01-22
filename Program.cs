@@ -21,12 +21,11 @@ int [,] array = new int[row,col];
 
 FillArray(array);
 PrintArray(array);
-Console.WriteLine();
 SortRowArray(array);
 //PrintSortRowArray(array);
-Console.WriteLine();
 SortColArray(array);
 PrintSortColArray(array);
+
 
 void FillArray(int[,] array)
 {
@@ -43,7 +42,7 @@ for (int i=0;i<array.GetLength(0);i++)
 for (int j=0;j<array.GetLength(1);j++)
 Console.Write($"{array[i,j],3} \t");
 Console.WriteLine();
-}}
+}Console.WriteLine();}
 
 
 
@@ -65,6 +64,7 @@ array[i,k] = tmp;
                 }
             }
 }
+
 
 /*
 void PrintSortRowArray(int[,] array)
